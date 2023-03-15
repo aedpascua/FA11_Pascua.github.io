@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>FA11_Pascua</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <script>
+
+    var a = prompt("Please input L1", "");
+    var b = prompt("Please input L2", "");
+    var c = prompt("Please input L3", "");
+    determineTriangle()
+
+    
+    function determineTriangle() {
+      if (a == b && b == c) {
+        alert("The triangle is EQUILATERAL.");
+      } else if (a == b || b == c || a == c) {
+        alert("The triangle is ISOSCELES.");
+      } else {
+        alert("The triangle is SCALENE.");
+      }
+    }
+    
+  </script>
+</body>
+
+</html>
